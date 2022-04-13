@@ -74,7 +74,7 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
       variable = call.argument("variable");
     }
     if (variable == null) {
-      GrowingTacker.get().trackCustomEvent(eventId);
+      GrowingTracker.get().trackCustomEvent(eventId);
     } else {
       GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>)variable);
     }
